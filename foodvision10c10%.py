@@ -21,7 +21,7 @@ train_data = ImageDataGenerator(rescale=1/255).flow_from_directory(
     color_mode='rgb',
     target_size=(224, 224),
     class_mode='categorical',
-    directory='Machine Learning 3/FoodVision/10_food_classes_10_percent/10_food_classes_10_percent/test'
+    directory='path here'
 )
 test_data = ImageDataGenerator(rescale=1/255).flow_from_directory(
     batch_size=32,
@@ -29,7 +29,7 @@ test_data = ImageDataGenerator(rescale=1/255).flow_from_directory(
     color_mode='rgb',
     target_size=(224, 224),
     class_mode='categorical',
-    directory='Machine Learning 3/FoodVision/10_food_classes_10_percent/10_food_classes_10_percent/train'
+    directory='path here'
 )
 
 labels_text = list(train_data.class_indices.keys())
